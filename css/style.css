@@ -1,0 +1,51 @@
+@import "./form.css" ;
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  height: 100vh;
+  background: url('./../img/bg.jpg') no-repeat;
+  background-size: cover;
+position: relative;
+}
+
+.header::before {
+  content: "";
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0, 0, 0, .5);
+}
+
+.header__center {
+  color: white;
+  width: 1015px;
+  margin: 0 auto;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+}
+
+.header__column {
+  margin-right: 130px;
+  flex: 50%;
+}
+
+.header__column:last-child {
+  margin-right: 0;
+ 
+}
+
+
+.title {
+  height: 140px;
+}
+

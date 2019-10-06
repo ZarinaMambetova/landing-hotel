@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Landing-hotel</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__center">
+        <div class="header__column">
+            <div class="formWrapper">
+              <form action="" class="form__elem">
+                <div class="row">
+                  <div class="form-group">
+                    <label for="destination" class="form__name">Ваше направление</label>
+                    <input type="text" name="destination" class="form-control" id="destination"  placeholder="Ваше направление">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group">
+                    <label for="race" class="form__name">Дата заезда</label>
+                    <input type="date" name="race" class="form-control" id="race"  placeholder="дд.мм.гггг">
+                  </div>
+                  <div class="form-group">
+                    <label for="checkoff" class="form__name">Дата Отъезда</label>
+                    <input type="date" name="checkoff" class="form-control" id="checkoff" placeholder="дд.мм.гггг">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group">
+                    <label for="rooms" class="form__name">Комната</label>
+                    <select name="rooms" id="rooms" class="form-control">
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="adults" class="form__name">Взрослые</label>
+                    <select name="adults" id="adults" class="form-control">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="child" class="form__name">Дети</label>
+                    <select name="child" id="child" class="form-control">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                  </div>
+                </div>
+                <button class="button" type="submit">
+                  Check avaliability
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="header__column">
+              <h1 class="title"></h1>
+              <p class="title__subtitle">Москва — столица России; остальные эпитеты по сравнению с этим меркнут. Как ни банально это звучит, Москва — город контрастов</p>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="js/typed.js"></script>
+<script src='js/jquery.min.js'></script>
+<script src="js/script.js"></script>
+</body>
+</html>

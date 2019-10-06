@@ -1,0 +1,45 @@
+.form__elem {
+  background: white;
+  color: #222;
+  padding: 50px 20px;
+  border-radius: 5px;
+}
+
+.form__name {
+  color: #353d50;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.form-control {
+  background: #e8e9eb;
+  padding: 10px 5px;
+  color: #0a0a0c;
+  font-size: 14px;
+  width: 100%;
+  border: none;
+    outline: none;
+}
+
+.form-control:focus {
+  background-color: #e4ecfd;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: #40464c;
+}
+
+.row {
+  margin-bottom: 40px;
+  display: flex;
+  
+}
+
+.form-group {
+  margin-right: 30px;
+  flex: 3;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}

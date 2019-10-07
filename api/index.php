@@ -8,7 +8,7 @@ try {
 }
 
 // передача данных в бд
-function addNewApplication($dph, $destination, $race, $checkoff, $rooms, $adults, $child) {
+function addNewApplication($dbh, $destination, $race, $checkoff, $rooms, $adults, $child) {
 
   $sql = "INSERT INTO applications (destination, race, checkoff, rooms, adults, child) VALUES(:destination, :race, :checkoff, :rooms, :adults, :child)";
   $stmt = $dbh->prepare($sql);
@@ -29,7 +29,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
   $rooms = strip_tags(trim($_POST['data'][3]['value']));
   $adults = strip_tags(trim($_POST['data'][4]['value']));
   $child = strip_tags(trim($_POST['data'][5]['value']));
-  addNewApplication($dph, $destination, $race, $checkoff, $rooms, $adults, $child);
+  addNewApplication($dbh, $destination, $race, $checkoff, $rooms, $adults, $child);
 
 }
  
